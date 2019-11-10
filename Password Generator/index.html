@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link href="./Assets/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <header>
+      <h1 id="head1">Password Generator</h1>
+    </header>
+    <h2 id="body1">Generate a Password</h2>
+    <div id="inputArea">
+
+      <table id="center">
+        <tr>
+          <td colspan="3">
+    <textarea
+      readonly
+      id="password"
+      
+      rows="10"
+      placeholder="Your Secure Password"
+      aria-label="Generated Password"
+    ></textarea>
+    </td>
+    </tr>
+    <tr>
+      <td width="33%">
+    <button onclick=randomPassword()>Generate Password</button>
+    </td>
+    <td width="34%"></td>
+    <td width="33%" align="right">
+    <button id="copy" onclick=copyoutput()>
+      Copy to Clipboard
+    </button>
+    </td>
+    </tr>
+    </table>
+    </div>
+
+  </body>
+ 
+  <script src="./Assets/script.js"></script>
+</html>
